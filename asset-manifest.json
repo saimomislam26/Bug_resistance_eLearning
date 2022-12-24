@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Bug_resistance_eLearning/static/css/main.a5948a75.css",
+    "main.js": "/Bug_resistance_eLearning/static/js/main.48e69d7f.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/now-your-turn-right.png": "/Bug_resistance_eLearning/static/media/now-your-turn-right.ecc2c67ca07a7e428fc4.png",
+    "static/media/banner-circle.png": "/Bug_resistance_eLearning/static/media/banner-circle.12b26f79e89023d0f81c.png",
+    "static/media/footer-bg.png": "/Bug_resistance_eLearning/static/media/footer-bg.a2d22aa1a18bb1b8030b.png",
+    "static/media/Shopping-Cart.png": "/Bug_resistance_eLearning/static/media/Shopping-Cart.9ced0ff640521dc02ff6.png",
+    "static/media/Book-List-Project.png": "/Bug_resistance_eLearning/static/media/Book-List-Project.dea26f5df4e812ec48ac.png",
+    "static/media/brand-bg.png": "/Bug_resistance_eLearning/static/media/brand-bg.1dc53f33cd263634888a.png",
+    "static/media/one.jpg": "/Bug_resistance_eLearning/static/media/one.838950822fa21250e5dc.jpg",
+    "static/media/preloader.gif": "/Bug_resistance_eLearning/static/media/preloader.56e437ac5489558c9620.gif",
+    "static/media/inner-banner-bg.png": "/Bug_resistance_eLearning/static/media/inner-banner-bg.b9d3d12f714cb33826a9.png",
+    "static/media/banner-bg.png": "/Bug_resistance_eLearning/static/media/banner-bg.ba580651cbac6e6a8d4b.png",
+    "static/media/top_image.jpg": "/Bug_resistance_eLearning/static/media/top_image.a5d14c031aafa2f6f69e.jpg",
+    "static/media/student.png": "/Bug_resistance_eLearning/static/media/student.0a47e6afa7271768511b.png",
+    "static/media/GlacialIndifference-Regular.otf": "/Bug_resistance_eLearning/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
+    "static/media/Now-Bold.otf": "/Bug_resistance_eLearning/static/media/Now-Bold.2c606dec87dd9c7fcf5b.otf",
+    "static/media/testimonials-slider-bg.png": "/Bug_resistance_eLearning/static/media/testimonials-slider-bg.e98dc0bba4711709376c.png",
+    "static/media/Now-Medium.otf": "/Bug_resistance_eLearning/static/media/Now-Medium.5246d1ad3d732d18efe7.otf",
+    "static/media/Now-Light.otf": "/Bug_resistance_eLearning/static/media/Now-Light.47ed3ee1caf4c22e0015.otf",
+    "static/media/Now-Regular.otf": "/Bug_resistance_eLearning/static/media/Now-Regular.75a37ab505e0a6ec6c41.otf",
+    "static/media/Now-Thin.otf": "/Bug_resistance_eLearning/static/media/Now-Thin.34df2544a16fb157c871.otf",
+    "static/media/GlacialIndifference-Bold.otf": "/Bug_resistance_eLearning/static/media/GlacialIndifference-Bold.e742f534cb2ac8b560c6.otf",
+    "static/media/userimg.jpg": "/Bug_resistance_eLearning/static/media/userimg.5d9ea6317191df85e1b9.jpg",
+    "static/media/slick.svg": "/Bug_resistance_eLearning/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Bug_resistance_eLearning/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Bug_resistance_eLearning/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Bug_resistance_eLearning/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/owl.video.play.html": "/Bug_resistance_eLearning/static/media/owl.video.play.fca6ea2c9e60340435bd.html",
+    "static/media/xloading.html": "/Bug_resistance_eLearning/static/media/xloading.fca6ea2c9e60340435bd.html",
+    "index.html": "/Bug_resistance_eLearning/index.html",
+    "main.a5948a75.css.map": "/Bug_resistance_eLearning/static/css/main.a5948a75.css.map",
+    "main.48e69d7f.js.map": "/Bug_resistance_eLearning/static/js/main.48e69d7f.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5948a75.css",
+    "static/js/main.48e69d7f.js"
+  ]
+}
