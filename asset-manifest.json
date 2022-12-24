@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bug_resistance_eLearning/static/css/main.a5948a75.css",
-    "main.js": "/Bug_resistance_eLearning/static/js/main.38a2cd07.js",
+    "main.js": "/Bug_resistance_eLearning/static/js/main.16c7fb11.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js",
     "static/media/now-your-turn-right.png": "/Bug_resistance_eLearning/static/media/now-your-turn-right.ecc2c67ca07a7e428fc4.png",
     "static/media/banner-circle.png": "/Bug_resistance_eLearning/static/media/banner-circle.12b26f79e89023d0f81c.png",
@@ -32,11 +32,11 @@
     "static/media/xloading.html": "/Bug_resistance_eLearning/static/media/xloading.fca6ea2c9e60340435bd.html",
     "index.html": "/Bug_resistance_eLearning/index.html",
     "main.a5948a75.css.map": "/Bug_resistance_eLearning/static/css/main.a5948a75.css.map",
-    "main.38a2cd07.js.map": "/Bug_resistance_eLearning/static/js/main.38a2cd07.js.map",
+    "main.16c7fb11.js.map": "/Bug_resistance_eLearning/static/js/main.16c7fb11.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5948a75.css",
-    "static/js/main.38a2cd07.js"
+    "static/js/main.16c7fb11.js"
   ]
 }
