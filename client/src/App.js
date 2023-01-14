@@ -17,15 +17,15 @@ import "slick-carousel/slick/slick-theme.css";
 import Home from './Component/Home'
 import StudentSay from './Component/StudentSay'
 import CardSlider from './Component/CardSlider'
-import Main from './Component/course/Main.jsx'
+import Main from './Component/course/Main'
 
 const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" exact element={<Home/>}/>
+        <Route path="/Bug_resistance_eLearning/" exact element={<Home/>}/>
         <Route path="/student" exact element={<CardSlider/>}/>
-        <Route path='/courseadmission' exact element={<Main/>}/>
+        <Route path='/Bug_resistance_eLearning/courseadmission' exact element={<Main/>}/>
       </Routes>
     </div>
   )

@@ -56,22 +56,32 @@ const CouresMaterial = (props) => {
                             {contents.map((content, ind) => {
                                 return (
                                     <div key={ind} className="sticky__content_div" >
-                                        <span className='sticky__icon'>{content.icon}</span>
+                                        <span className='sticky__icon' style={{color: "#F23460"}}>{content.icon}</span>
                                         <span className='sticky__content'>{content.text}</span>
                                     </div>
                                 )
                             })}
                 </div>
                 <div className='coures__pricing'>
+                    <div>
                     <span>কোর্সের মূল্য</span>
-                    <span className='course__amount'>৳ ৭,০০০</span>
+                    <span className='course__amount'>৳ ৬,০০০</span>
+                    
+                    </div>
+                    <hr style={{border: "1px solid #5C2CC5"}} />
+                    <div>
+                    <span>প্রথম ইন্সটলমেন্ট</span>
+                    <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span>
+                    </div>
+
+
                 </div>
                 <div className='sticky__btn row'>
                     <span>
-                    <Link to='' class="cmn-btn" style={{ textDecoration: "none" }}>এখনই ভর্তি হোন</Link>
+                    <Link to='' class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "#F23460", color: "#ffffff", border: "2px solid #F23460"}}>এখনই ভর্তি হোন</Link>
                     </span>
                     <span >
-                    <Link to='' class="cmn-btn" style={{ textDecoration: "none" }} role={"button"}>ডাউনলোড সিলেবাস</Link>
+                    <Link to='' class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "transparent",border: "2px solid #F23460", color: "#ffffff" }} role={"button"}>ডাউনলোড সিলেবাস</Link>
                     </span>
                 </div>
             </div>

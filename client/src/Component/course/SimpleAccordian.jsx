@@ -4,6 +4,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { ArrowRight } from '@mui/icons-material';
 
 
 
@@ -39,13 +40,13 @@ export default function SimpleAccordian() {
             style={{border: "none", backgroundColor: "#F2F5F9"}}
             disableGutters={"true"} expanded={expanded === `panel${i}`} onChange={handleChange( `panel${i}`)}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ArrowRight  style={{fontWeight: "700", fontSize:"2.2rem", color:"#3F3F3F"}} />}
           aria-controls="panel1bh-content"
           id={`panel${i}bh-header`}
           
         >
           
-          <Typography sx={{ color: 'text.secondary', border: "none", fontWeight: "500", }}>{c.title}</Typography>
+          <Typography sx={{ color: '#3F3F3F', border: "none", fontSize: "16px", fontWeight: "600", lineHeight:"24px" }}>{c.title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography sx={{lineHeight: "2rem" }}>

@@ -18,6 +18,9 @@ import Footer from '../Shared/Footer'
 // import "bootstrap/dist/css/bootstrap.min.css"
 import oneImg from "../../images/one.jpg"
 import NavbarTop from "../Shared/NavbarTop";
+import { Avatar } from "@mui/material";
+import { useLayoutEffect } from "react";
+import { useRef } from "react";
 
 let selectedValues = [
   "বিশ্ববিদ্যালয় পর্যায়ের শিক্ষার্থী (কম্পিউটার সায়েন্স/আইটি বিভাগ)",
@@ -40,7 +43,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3, maxHeight: "100vh", overflowX: "auto" }}>
+        <Box sx={{ p: 3, maxHeight: "100vh", overflowX: "auto", backgroundColor: "#F2ECFF", borderRadius: "0 0 10px 10px" }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -63,18 +66,47 @@ function a11yProps(index) {
 
 function Main() {
   const [value, setValue] = React.useState(0);
-  const [isTabWindow, setIsTabWindow] = useState(window.innerWidth)
+  const [isTabWindow, setIsTabWindow] = useState(window.innerWidth);
+  const [overlayHeight, setOverLayHight] = useState();
+  const [right, setRight] = useState();
+  const ref = useRef(null)
+  const [imgLoad, setImgLoad] = useState(false);
+  const imgRef = useRef();
+  
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  
+
+  
+  useLayoutEffect(()=> {
+    if(imgLoad){
+        const courseTop = document.querySelector(".course__top");
+        console.log("layout",courseTop.clientHeight);
+        setOverLayHight(courseTop.clientHeight+174)
+
+      }
+  },[imgLoad])
   //
   useEffect(() => {
-    console.log("Main Component");
+    console.log("form use effect", ref.current.offsetHeight);
+    
     function resizewidth() {
       setIsTabWindow(window.innerWidth)
       console.log(window.innerWidth);
+      const overlayDiv = document.querySelector(".div__overlay");
+      const courseTop = document.querySelector(".course__top");
+      const leftElement = document.querySelector(".course_addmission_main");
+      setRight(leftElement.clientWidth)
+      console.log("left div position", leftElement.clientWidth + 10);
+      setOverLayHight(courseTop.clientHeight+174)
+      // overlayDiv.clientHeight = courseTop.clientHeight 
+      console.log("course top", courseTop.clientHeight);
+      // console.log("over lay",overlayDiv.clientHeight);
+
+      
     }
 
     window.addEventListener('resize', resizewidth)
@@ -84,32 +116,29 @@ function Main() {
   return (
     <>
 
-      {/* <div className="div__overlay"></div> */}
-      <NavbarTop/>
+      <NavbarTop />
+      <div className="div__overlay" style={{height: `${overlayHeight}px`}}></div>
       <main className="course_addmission_main" >
         <section className="course__top__section">
           <div className="course__top__section__wrapper">
-            <div className="course__top">
+            <div className="course__top" ref={ref} >
               <div className="course__top_wrapper">
                 <div className="top_text_content">
                   <div className="top-h1">
-                    <h1>কমপ্লিট ফ্রন্ট-এন্ড ডেভেলপমেন্ট শিখুন (জাভাস্ক্রিপ্ট)</h1>
+                    <h1>কমপ্লিট SQA(Manual & Automation ) শিখুন</h1>
                   </div>
                   <div className="top-p">
                     <p>
-                      ফ্রন্ট এন্ড ওয়েব ডেভেলপমেন্টের উপর আকর্ষণীয় ক্যারিয়ার বানানোর
-                      জন্য প্রয়োজনীয় প্রোগ্রামিং স্কিলগুলো শিখুন ৪ মাসের মধ্যে, ১৪টি
-                      প্র্যাকটিক্যাল প্রজেক্টের মাধ্যমে।
+                      SQA এর উপর আকর্ষণীয় ক্যারিয়ার বানানোর জন্য প্রয়োজনীয় থিউরী এবং প্রাক্টিক্যাল স্কিলগুলো শিখুন ৩ মাসের লাইভ ক্লাসের মধ্যে এবং ৫টি প্র্যাকটিক্যাল প্রজেক্টের মাধ্যমে।
                     </p>
                   </div>
                 </div>
                 <div className="gutter__div"></div>
 
                 <div className="top-image">
-                  <img src={topImage} alt="top pic" className="" />
+                  <img src={topImage} onLoad={()=> setImgLoad(true)} ref={imgRef} alt="top pic" className="" loading="lazy" />
                 </div>
               </div>
-            </div>
             {isTabWindow <= 768 && (
               <div>
                 <div className="gutter__div"></div>
@@ -118,6 +147,7 @@ function Main() {
                 </aside>
               </div>
             )}
+            </div>
 
             <div className="" style={{}}>
 
@@ -127,49 +157,59 @@ function Main() {
                   <Tabs
                     className="tabs"
 
-                    variant="fullwidth"
+                    variant="fullWidth"
                     sx={{
                       display: "flex",
+                      boxSizing: "border-box",
                       justifyContent: "space-evenly",
-                      backgroundColor: "gray",
-                      borderRadius: '10px',
-                      "& button": { fontSize: "1rem", width: "25%" },
+                      backgroundColor: "#F2ECFF",
+                      borderRadius: '10px 10px 0 0',
+                      zIndex:"1000",
                       "& button:hover": {
-                        backgroundColor: "rgb(228, 62, 162)",
+                        backgroundColor: "#5C2CC5",
                         color: "white",
                       },
+                     
+                      
 
                     }}
                     value={value}
                     onChange={handleChange}
                     aria-label="basic tabs example"
                   >
-                    <Tab id="tab" label="কোর্সের বিস্তারিত" {...a11yProps(0)} />
+                    <Tab className="tab" label="কোর্সের বিস্তারিত" {...a11yProps(0)} />
                     <Tab className="tab" label="সিলেবাস" {...a11yProps(1)} />
                     <Tab className="tab" label="কেন স্পেশাল" {...a11yProps(2)} />
-                    <Tab className="tab" label="প্রজেক্ট ও অ্যাসাইনমেন্ট" {...a11yProps(2)} />
+                    <Tab className="tab" sx={{
+                      width: {
+                      }
+                    }} label="প্রজেক্ট ও অ্যাসাইনমেন্ট" {...a11yProps(2)} />
                   </Tabs>
                   <TabPanel value={value} index={0}>
                     {/* course description */}
                     <CourseDescription />
+
                   </TabPanel>
                   <TabPanel value={value} index={1}>
                     {/* syllabus */}
-
                     <Syllabus />
+
+
                   </TabPanel>
                   <TabPanel value={value} index={2}>
                     {/* Why Specials */}
-
                     <WhySpecials />
+
+
                   </TabPanel>
                   <TabPanel value={value} index={3}>
                     {/* project assignment */}
-
                     <ProjectAssignments />
+
                   </TabPanel>
                   <div className="gutter__div"></div>
-                  <div className="email__subcription" style={{marginTop: "10rem"}}>
+                  
+                  {/* <div className="email__subcription" style={{ marginTop: "10rem" }}>
                     <p>পূর্ণাঙ্গ সিলেবাস ইমেইলে পেতে নিচের ফর্মটি পূরণ করুন</p>
                     <div className="gutter__div"></div>
                     <hr />
@@ -204,7 +244,7 @@ function Main() {
                       <div className="gutter__div"></div>
 
                     </div>
-                  </div>
+                  </div> */}
 
                   <section className="career__track" >
                     <div className="career__track__div">
@@ -220,43 +260,52 @@ function Main() {
                             <SimpleAccordian />
                           </div>
                         </div>
+                        <div className="gutter__div"></div>
+                        {/* <div className="gutter__div"></div> */}
+
+                        <h2 style={{
+                          fontSize: "24px", fontFamily: 'Hind Siliguri', fontWeight: "700", lineHeight: "39px"
+                        }}>আপনি যার কাছ থেকে শিখবেন</h2>
+
+                        <section className="career__track instructor__div">
+                          <div className="instructor__wrapper">
+
+                            <div className="course__instructor">
+                              <div className="instruuctor__header">
+                                <div className="instruuctor__image">
+                                  <Avatar src={oneImg} sx={{ width: 90, height: 90 }} className="avatar__profile" />
+                                </div>
+                                <div className="instruuctor__name">
+                                  <h2>John Doe</h2>
+                                  <p>Instructor at XYZ</p>
+                                </div>
+
+
+                              </div>
+
+                              {/* <div className="gutter__div"></div> */}
+                            </div>
+                            <div className="insturctor__details">
+                              <p>
+                                Software Developer at Markopolo.ai, having more than
+                                three years of experience in full stack web
+                                development. He is the author of some of the top
+                                rated programming & web development courses on
+                                Bohubrihi. Simanta is a Computer Science graduate of
+                                Chittagong University of Engineering & Technology
+                                (CUET)
+                              </p>
+                            </div>
+                          </div>
+                        </section>
+
                       </div>
                     </div>
                   </section>
 
                   <div className="gutter__div"></div>
 
-                  <section className="career__track">
-                    <div className="instructor__wrapper">
 
-                      <div className="course__instructor">
-                        <div className="instruuctor__header">
-                          <div className="instruuctor__image">
-                            <img src={oneImg} alt="instructor__name" />
-                          </div>
-                          <div className="instruuctor__name">
-                            <h2>John Doe</h2>
-                            <p>Instructor at XYZ</p>
-                          </div>
-
-
-                        </div>
-
-                        {/* <div className="gutter__div"></div> */}
-                      </div>
-                      <div className="insturctor__details">
-                        <p>
-                          Software Developer at Markopolo.ai, having more than
-                          three years of experience in full stack web
-                          development. He is the author of some of the top
-                          rated programming & web development courses on
-                          Bohubrihi. Simanta is a Computer Science graduate of
-                          Chittagong University of Engineering & Technology
-                          (CUET)
-                        </p>
-                      </div>
-                    </div>
-                  </section>
 
                 </Box>
 
@@ -268,7 +317,7 @@ function Main() {
                   <div><ProjectAssignments /></div>
                   <div>
                     <div className="gutter__div"></div>
-                    <div className="email__subcription">
+                    {/* <div className="email__subcription">
                       <p>পূর্ণাঙ্গ সিলেবাস ইমেইলে পেতে নিচের ফর্মটি পূরণ করুন</p>
                       <div className="gutter__div"></div>
                       <hr />
@@ -303,7 +352,7 @@ function Main() {
 
                         <div className="gutter__div"></div>
                       </div>
-                    </div>
+                    </div> */}
                     <section className="career__track" >
                       <div className="career__track__div">
                         <div className="career__track__wrapper">
@@ -321,18 +370,17 @@ function Main() {
                               <SimpleAccordian />
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    </section>
-                    <div className="gutter__div"></div>
-
-                    <section className="career__track">
+                          <div className="gutter__div"></div>
+                          <h2 style={{
+                          fontSize: "24px", fontFamily: 'Hind Siliguri', fontWeight: "700", lineHeight: "39px"
+                        }}>আপনি যার কাছ থেকে শিখবেন</h2>
+                          <section className="career__track instructor__div">
                       <div className="instructor__wrapper">
 
                         <div className="course__instructor">
                           <div className="instruuctor__header">
                             <div className="instruuctor__image">
-                              <img src={oneImg} alt="instructor__name" />
+                              <Avatar src={oneImg} sx={{ width: 90, height: 90 }} />
                             </div>
                             <div className="instruuctor__name">
                               <h2>John Doe</h2>
@@ -357,13 +405,19 @@ function Main() {
                         </div>
                       </div>
                     </section>
+                        </div>
+                      </div>
+                    </section>
+                    <div className="gutter__div"></div>
+
+                    
                   </div>
                 </div>
               )}
             </div>
           </div>
         </section>
-        {isTabWindow > 768 && (<aside className="sticky__sidebar__section"
+        {isTabWindow > 768 && (<aside style={{}} className="sticky__sidebar__section"
         // style={{
         //   maxHeight: `${isTabWindow < 1250? parseInt(isTabWindow/50)*3 + 32 : 32}rem`,
         // }}
@@ -376,7 +430,7 @@ function Main() {
         <BottomSticky />
       )}
 
-        <Footer/>
+      <Footer />
 
       {/* <footer>Footer</footer> */}
     </>

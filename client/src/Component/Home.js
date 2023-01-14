@@ -14,6 +14,7 @@ import specializingIcon2 from '../images/specilizing-icon2.png'
 import specializingIcon3 from '../images/specilizing-icon3.png'
 import specializingIcon4 from '../images/specilizing-icon4.png'
 import turn from '../images/now-your-turn-right.png'
+import logo from '../images/logo.png'
 
 import ScrollButton from './Shared/ScrollButton'
 import CardSlider from './CardSlider'
@@ -41,28 +42,28 @@ const Home = () => {
                 <div class="main-content">
                   <div class="item one wow fadeInDown">
                     <img src={icon1} alt="image" />
-                    <h5>UI/UX</h5>
+                    <h5>Regression Testing</h5>
                   </div>
                   <div class="item two wow fadeInDown">
                     <img src={icon2} alt="image" />
-                    <h5>Illustrations</h5>
+                    <h5>Monkey Testing</h5>
                   </div>
                   <div class="item three wow fadeInDown">
                     <img src={icon3} alt="image" />
-                    <h5>Hi there!</h5>
+                    <h5>Selenium</h5>
                   </div>
                   <div class="item four wow fadeInDown">
                     <img src={icon4} alt="image" />
-                    <h5>Work with me</h5>
+                    <h5>Smoke Testing</h5>
                   </div>
                   <div class="row justify-content-center">
                     <div class="col-lg-6">
                       <div class="right-area text-center">
                         <img src={banner} class="right-img" alt="banner-circle" />
                         <div class="download-area">
-                          <a href="#" class="download" style={{ textDecoration: "none" }}>Download CV
+                          <span href="#" class="download" style={{ textDecoration: "none" }}>SQA Engineer
                             <img src={downloadCV} alt="image" />
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -73,13 +74,13 @@ const Home = () => {
             <div class="row justify-content-center">
               <div class="col-lg-7 d-flex align-items-center">
                 <div class="text-area text-center">
-                  <h5>HI THERE, I'M JAMES</h5>
-                  <h2>A <span>Digital</span> Product Designer</h2>
+                  {/* <h5>HI THERE, I'M JAMES</h5> */}    
+                  <h2>SQA <span>Live</span> Course Platform</h2>
                   <div class="btn-area d-flex align-items-center justify-content-center">
-                    <a href="contact.html" class="cmn-btn" style={{ textDecoration: "none" }}>Contact Us</a>
-                    <a href="portfolio.html" class="cmn-btn-second" style={{ textDecoration: "none" }}>View Project
+                    <a href="contact.html" class="cmn-btn" style={{ textDecoration: "none" }}>Enroll Live Course</a>
+                    {/* <a href="portfolio.html" class="cmn-btn-second" style={{ textDecoration: "none" }}>View Project
                       <span class="btn-icon"></span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -96,10 +97,9 @@ const Home = () => {
             <div class="row justify-content-center text-center">
               <div class="col-lg-6" >
                 <div class="section-header">
-                  <h4 class="sub-title">What I Do</h4>
+                  <h4 class="sub-title">What We Do</h4>
                   <h3 class="title">Specilizing In</h3>
-                  <p>Sed tempus sapien in nisi auctor lacinia. Donec metus
-                    felis, ultricies nec pharetra volutpat</p>
+                 
                 </div>
               </div>
             </div>
@@ -107,25 +107,25 @@ const Home = () => {
               <div class="col-lg-3 col-md-6">
                 <div class="single-item">
                   <img src={specializingIcon1} alt="image" />
-                  <a href="portfolio-details.html" style={{ textDecoration: "none" }}><h2>Design and UI/UX</h2></a>
+                 <h2> Manual Testing</h2>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="single-item">
                   <img src={specializingIcon2} alt="image" />
-                  <a href="portfolio-details.html" style={{ textDecoration: "none" }}><h2>Web design development</h2></a>
+                  <h2> API Testing</h2>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="single-item">
                   <img src={specializingIcon3} alt="image" />
-                  <a href="portfolio-details.html" style={{ textDecoration: "none" }}><h2>Custom Solutions</h2></a>
+                  <h2>Load Testing</h2>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="single-item">
                   <img src={specializingIcon4} alt="image" />
-                  <a href="portfolio-details.html" style={{ textDecoration: "none" }}><h2>Animations Video ads</h2></a>
+                 <h2>Automation Testing</h2>
                 </div>
               </div>
             </div>
@@ -140,12 +140,10 @@ const Home = () => {
             <div class="row">
               <div class="col-lg-7">
                 <div class="section-header">
-                  <h4 class="sub-title-alt">Now Your Turn</h4>
-                  <h3 class="title">Interested in Working with Me?</h3>
-                  <p>Do you need help with any web design or development project?
-                    Let me give you a hand. Get in touch with me and i will get back to
-                    you within 1-2 business days.</p>
-                  <a href="contact.html" class="cmn-btn" style={{ textDecoration: "none" }}>Contact me</a>
+                  {/* <h4 class="sub-title-alt">Now Your Turn</h4> */}
+                  <h3 class="title">Interested in Building a Career in SQA?</h3>
+                  <p>Software quality assurance (SQA) is a process that assures that all software engineering processes, methods, activities, and work items are monitored and comply with the defined standards.</p>
+                  <a href="contact.html" class="cmn-btn" style={{ textDecoration: "none" }}>Enroll SQA Live Course</a>
                 </div>
               </div>
             </div>
@@ -154,47 +152,19 @@ const Home = () => {
         <div class="right-area">
           <img src={turn} alt="image" />
         </div>
-        {/* <div class="bottom-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-item">
-                  <span class="counter">58</span>
-                  <h5>Happy Clients</h5>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-item second">
-                  <span class="counter">16</span>
-                  <h5>Years Experience</h5>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-item third">
-                  <span class="counter">30</span>
-                  <span>k</span>
-                  <h5>Hours Worked</h5>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-item fourth">
-                  <span class="counter">5</span>
-                  <h5>Awards Won</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+      
       </section>
       {/* <!-- Now Your Turn end --> */}
       <StudentBig/>
       {/* What Student Say */}
-      <section id="what_student_say">
+      {/* <section id="what_student_say">
         <CardSlider />
-      </section>
+      </section> */}
 
 
       {/* <!-- footer-section start --> */}
+
+      
      <Footer/>
     </>
 

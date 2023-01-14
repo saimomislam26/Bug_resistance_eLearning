@@ -53,13 +53,12 @@ const NavbarTop = () => {
                 <Collapse isOpen={isOpen} navbar>
                   <Nav className="mr-auto navbar-collapsed" navbar>
                     <ul class="navbar-nav main-menu ml-auto" >
-                      <li className='visible-list' ><Link to="/">Home</Link></li>
-                      <li className='visible-list' ><Link to="/">About</Link></li>
-                      <li className='visible-list' ><Link to="/courseadmission">Course Admission</Link></li>
-                      <li className='visible-list' ><Link to="/" >Career-Blog</Link></li>
-                      <li className='visible-list' ><Link to='/' >Contact</Link></li>
+                      <li className='visible-list' ><Link to="/Bug_resistance_eLearning/">Home</Link></li>
+                      <li className='visible-list' ><Link to="/Bug_resistance_eLearning/">About</Link></li>
+                      <li className='visible-list' ><Link to="/Bug_resistance_eLearning/courseadmission">Course Admission</Link></li>
+                      <li className='visible-list' ><Link to="/Bug_resistance_eLearning/" >Career-Blog</Link></li>
+                      <li className='visible-list' ><Link to='/Bug_resistance_eLearning/' >Contact</Link></li>
                     </ul>
-
                   </Nav>
                 </Collapse>
               </Navbar>

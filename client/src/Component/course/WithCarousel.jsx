@@ -3,6 +3,8 @@ import React from 'react'
 import Slider from "react-slick";
 import userImg from "../../images/userimg.jpg"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import { Avatar } from '@mui/material';
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 
 const commentsData = [
   {
@@ -11,13 +13,26 @@ const commentsData = [
     comment: "প্রবলেম ফেস করলে মেন্টর সাপোর্ট ও ব্যাচের অন্যান্য স্টুডেন্টদের থেকে সাপোর্ট পেয়েছি। স্পেশালি ইন্সট্রাক্টরের কথা না বললেই নয়, আমি সীমান্ত পাল ভাইয়াকে একটা প্রবলেমের জন্য ১২/১৩ বার নক করেছি, উনি বিষয়টি বিস্তারিত আমাকে বুঝিয়েছেন। এছাড়া কোর্স কন্টেন্টগুলো সুন্দর করে সাজানো এবং প্রত্যেকটা বিষয় বিস্তারিত বর্ণনা করা হয়েছে।",
 
   },
-  
   {
     profileImgSrc: userImg,
-    userName: "Touhedur Rahman",
-    comment: "সাজানো এবং প্রত্যেকটা বিষয় বিস্তারিত বর্ণনা করা হয়েছে। প্রবলেম ফেস করলে মেন্টর সাপোর্ট ও ব্যাচের অন্যান্য স্টুডেন্টদের থেকে সাপোর্ট পেয়েছি। স্পেশালি ইন্সট্রাক্টরের কথা না বললেই নয়, আমি সীমান্ত পাল ভাইয়াকে একটা প্রবলেমের জন্য ১২/১৩ বার নক করেছি, উনি বিষয়টি বিস্তারিত আমাকে বুঝিয়েছেন। এছাড়া কোর্স কন্টেন্টগুলো সুন্দর করে সাজানো এবং প্রত্যেকটা বিষয় বিস্তারিত বর্ণনা করা হয়েছে।,প্রবলেম ফেস করলে মেন্টর সাপোর্ট ও ব্যাচের অন্যান্য স্টুডেন্টদের থেকে সাপোর্ট পেয়েছি। স্পেশালি ইন্সট্রাক্টরের কথা না বললেই নয় |"
+    userName: "Ashikur Rahman",
+    comment: "প্রবলেম ফেস করলে মেন্টর সাপোর্ট ও ব্যাচের অন্যান্য স্টুডেন্টদের থেকে সাপোর্ট পেয়েছি। স্পেশালি ইন্সট্রাক্টরের কথা না বললেই নয়, আমি সীমান্ত পাল ভাইয়াকে একটা প্রবলেমের জন্য ১২/১৩ বার নক করেছি, উনি বিষয়টি বিস্তারিত আমাকে বুঝিয়েছেন। এছাড়া কোর্স কন্টেন্টগুলো সুন্দর করে সাজানো এবং প্রত্যেকটা বিষয় বিস্তারিত বর্ণনা করা হয়েছে।",
 
-  }
+  },
+  {
+    profileImgSrc: userImg,
+    userName: "Ashikur Rahman",
+    comment: "প্রবলেম ফেস করলে মেন্টর সাপোর্ট ও ব্যাচের অন্যান্য স্টুডেন্টদের থেকে সাপোর্ট পেয়েছি। স্পেশালি ইন্সট্রাক্টরের কথা না বললেই নয়, আমি সীমান্ত পাল ভাইয়াকে একটা প্রবলেমের জন্য ১২/১৩ বার নক করেছি, উনি বিষয়টি বিস্তারিত আমাকে বুঝিয়েছেন। এছাড়া কোর্স কন্টেন্টগুলো সুন্দর করে সাজানো এবং প্রত্যেকটা বিষয় বিস্তারিত বর্ণনা করা হয়েছে।",
+
+  },
+  {
+    profileImgSrc: userImg,
+    userName: "Ashikur Rahman",
+    comment: "প্রবলেম ফেস করলে মেন্টর সাপোর্ট ও ব্যাচের অন্যান্য স্টুডেন্টদের থেকে সাপোর্ট পেয়েছি। স্পেশালি ইন্সট্রাক্টরের কথা না বললেই নয়, আমি সীমান্ত পাল ভাইয়াকে একটা প্রবলেমের জন্য ১২/১৩ বার নক করেছি, উনি বিষয়টি বিস্তারিত আমাকে বুঝিয়েছেন। এছাড়া কোর্স কন্টেন্টগুলো সুন্দর করে সাজানো এবং প্রত্যেকটা বিষয় বিস্তারিত বর্ণনা করা হয়েছে।",
+
+  },
+  
+  
   
 ]
 const settings = {
@@ -31,15 +46,38 @@ const settings = {
       pauseOnFocus: "true",
       autoplay:'true',
       adaptiveHeight:"true",
-      // useCSS: 'true',
-      // useTransform: 'true'
+      useCSS: 'true',
+      useTransform: 'true',
+      appendDots: dots => (
+        <div
+          style={{
+            padding: "2px",
+            backgroundColor: "#ffffff",
+            borderRadius: "5px"
+          }}
+        >
+          <ul style={{ margin: "0px" }}> {dots} </ul>
+        </div>
+      ),
+      customPaging: i => (
+        <div
+          style={{
+            width: "30px",
+            height: "30px",
+            fontSize:"1rem",
+            color: "gray",
+          }}
+        >
+          <HorizontalRuleIcon />
+        </div>
+      )
       
 
 
 }
 const WithCarousel = () => {
   return (
-    <div className='carosol'>
+    <div className='carosol' style={{marginTop: "30px"}}>
       <Slider {...settings} className='cro'  >
     {commentsData.map((comment)=> {
       return(
@@ -48,7 +86,7 @@ const WithCarousel = () => {
       <div className='carosel__div__top'>
         <FormatQuoteIcon sx={{
           rotate: "180deg",
-          color: "#175fb6" ,
+          color: "#F23460" ,
           fontSize: "3rem",
           // fontWeight: "700"
         }}  />
@@ -58,11 +96,12 @@ const WithCarousel = () => {
           {comment.comment}
         </p>
       </div>
-      <div className='carosel__div__bottom'>
+      <div className='carosel__div__bottom' style={{marginBottom: "0"}}>
         <div className='user__profile__img'>
-          <img alt={'user img'} src={comment.profileImgSrc} />
+          {/* <img alt={'user img'} src={comment.profileImgSrc} /> */}
+          <Avatar src={comment.profileImgSrc} sx={{ width: 100, height: 100 }} />
         </div>
-        <div className='user__profile__name'>
+        <div className='user__profile__name' style={{textAlign: "center"}} >
           <span>{comment.userName}</span>
         </div>
       </div>

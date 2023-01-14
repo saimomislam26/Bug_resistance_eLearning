@@ -14,8 +14,8 @@ const StudentSay = () => {
   return (
     <>
     
-      <div style={{display:"flex",marginRight:"30px"}}>
-        <Card sx={{ minWidth: 200, maxWidth: 600, backgroundColor: "#FFFFF" ,border:"2px solid whitesmoke" }}>
+      {/* <div className='student_card' style={{display:"flex",marginRight:"30px",border:"2px solid red"}}> */}
+        <Card className='student_card' sx={{ maxWidth: 600, backgroundColor: "#FFFFF" ,border:"2px solid whitesmoke",marginRight:"15px" }}>
           <CardContent>
             <Typography sx={{ color: '#343b6d',fontSize: '20px',lineHeight: '1.6' }} color="text.secondary" gutterBottom>
               বহুব্রীহি - আমার কাছে একটা ভালোবাসার নাম। আমি বহুব্রীহি থেকে অ্যান্ড্রয়েড এ্যাপ ডেভেলপমেন্ট সহ প্রিমিয়াম ১১টি কোর্স করেছি। অপেক্ষায় আছি ফুল স্টাক ডিজিটাল মার্কেটিং কোর্সটি করার জন্য। আশা করি ভবিষ্যতেও বহুব্রীহি টীম বিভিন্ন বিষয়ের উপর এমন উন্নতমানের কোর্স আমাদের জন্য পাবলিশ করবে।
@@ -71,7 +71,7 @@ const StudentSay = () => {
             </div>           
           </CardActions>
         </Card> */}
-      </div>
+      {/* </div> */}
 
     </>
 

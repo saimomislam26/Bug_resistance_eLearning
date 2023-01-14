@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const BottomSticky = () => {
   return (
     <div className="sticky__bottom">
-                 <div className='coures__pricing priceing'>
-                 মূল্য:<span>৳ ৭,০০০</span>
+                 <div className='coures__pricing priceing' >
+                 মূল্য:<span style={{display: "contents"}} >৳ ৭,০০০</span>
                 </div>
                     <div className="coures__pricing admission_now">
                     <Link to='' role={"button"}><span>এখনই ভর্তি হোন <p className='btn__amount'>(৳ ৭,০০০)</p> </span></Link>

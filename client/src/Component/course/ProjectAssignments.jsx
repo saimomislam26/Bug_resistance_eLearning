@@ -9,7 +9,10 @@ import ModalImage from "react-modal-image";
 
 const ProjectAssignments = () => {
     return (
-        <div className="course__description__main">
+        <div className="course__description__main" style={{
+            overflowX: "hidden",
+
+        }}>
             <div className="course__description">
                 <div>
                     <h3>কী কী শিখবেন এ কোর্স থেকে?</h3>
