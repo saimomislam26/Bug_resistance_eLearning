@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Bug_resistance_eLearning/static/css/main.3f5b281d.css",
-    "main.js": "/Bug_resistance_eLearning/static/js/main.ccb6958c.js",
+    "main.css": "/Bug_resistance_eLearning/static/css/main.e27f2020.css",
+    "main.js": "/Bug_resistance_eLearning/static/js/main.492be6a6.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js",
     "static/media/now-your-turn-right.png": "/Bug_resistance_eLearning/static/media/now-your-turn-right.ecc2c67ca07a7e428fc4.png",
     "static/media/banner-circle.png": "/Bug_resistance_eLearning/static/media/banner-circle.12b26f79e89023d0f81c.png",
@@ -31,12 +31,12 @@
     "static/media/slick.woff": "/Bug_resistance_eLearning/static/media/slick.295183786cd8a1389865.woff",
     "static/media/owl.video.play.html": "/Bug_resistance_eLearning/static/media/owl.video.play.fca6ea2c9e60340435bd.html",
     "static/media/xloading.html": "/Bug_resistance_eLearning/static/media/xloading.fca6ea2c9e60340435bd.html",
-    "main.3f5b281d.css.map": "/Bug_resistance_eLearning/static/css/main.3f5b281d.css.map",
-    "main.ccb6958c.js.map": "/Bug_resistance_eLearning/static/js/main.ccb6958c.js.map",
+    "main.e27f2020.css.map": "/Bug_resistance_eLearning/static/css/main.e27f2020.css.map",
+    "main.492be6a6.js.map": "/Bug_resistance_eLearning/static/js/main.492be6a6.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f5b281d.css",
-    "static/js/main.ccb6958c.js"
+    "static/css/main.e27f2020.css",
+    "static/js/main.492be6a6.js"
   ]
 }
