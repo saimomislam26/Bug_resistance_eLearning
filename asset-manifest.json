@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Bug_resistance_eLearning/static/css/main.4ae18e72.css",
+    "main.css": "/Bug_resistance_eLearning/static/css/main.1bd96ad9.css",
     "main.js": "/Bug_resistance_eLearning/static/js/main.f2733625.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js",
     "static/media/Mallik_Galib_Shahriar.jpg": "/Bug_resistance_eLearning/static/media/Mallik_Galib_Shahriar.2b738d4386890c82b957.jpg",
@@ -42,12 +42,12 @@
     "static/media/slick.woff": "/Bug_resistance_eLearning/static/media/slick.295183786cd8a1389865.woff",
     "static/media/owl.video.play.html": "/Bug_resistance_eLearning/static/media/owl.video.play.fca6ea2c9e60340435bd.html",
     "static/media/xloading.html": "/Bug_resistance_eLearning/static/media/xloading.fca6ea2c9e60340435bd.html",
-    "main.4ae18e72.css.map": "/Bug_resistance_eLearning/static/css/main.4ae18e72.css.map",
+    "main.1bd96ad9.css.map": "/Bug_resistance_eLearning/static/css/main.1bd96ad9.css.map",
     "main.f2733625.js.map": "/Bug_resistance_eLearning/static/js/main.f2733625.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Bug_resistance_eLearning/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ae18e72.css",
+    "static/css/main.1bd96ad9.css",
     "static/js/main.f2733625.js"
   ]
 }
