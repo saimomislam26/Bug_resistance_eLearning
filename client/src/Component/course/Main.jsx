@@ -16,7 +16,9 @@ import CouresMaterial from "./CouresMaterial";
 import BottomSticky from "./BottomSticky";
 import Footer from '../Shared/Footer'
 // import "bootstrap/dist/css/bootstrap.min.css"
-import oneImg from "../../images/one.jpg"
+import oneImg from "../../images/Fahim Hasan.jpg"
+import secondImage from '../../images/Makid Hyder.jpg'
+import thirdImage from '../../images/Mohoshi Haque.jpg'
 import NavbarTop from "../Shared/NavbarTop";
 import { Avatar } from "@mui/material";
 import { useLayoutEffect } from "react";
@@ -30,7 +32,27 @@ let selectedValues = [
   "উদ্যোক্তা",
   "অন্যান্য",
 ];
+const instructor = [
+  {
+    name: "Makid Haider",
+    imgsrc: oneImg,
+    title: "Instructor, Bug Resistance",
+    content: "Having graduated from Ahsanullah University of Science and Technology, I joined BJIT ltd as a SQA Engineer. Since then, I have been working in QA professionally. I am currently working at IdeaScale ltd. In 2022,  I've successfully passed one of the most prestigious certificates for any SQA Engineer, the ISTQB® - International Software Testing Qualifications Board exam."
+  },
+  {
+    name: "Fahim Chowdhury",
+    imgsrc: secondImage,
+    title: "Instructor, Bug Resistance",
+    content: "Software Engineer at Relisource Tech Ltd, having more than three years of experience in the Software Quality Assurance sector. Previously, I had been working in Tekarsh as a SQA Engineer. Besides regular duties, I love to engage myself in producing something useful; using the creativity I have & the knowledge I have gained."
+  },
+  {
+    name: "Mohoshi Haque",
+    imgsrc: thirdImage,
+    title: "Mentor, Bug Resistance",
 
+    content: "Graduating from Ahsanullah University of Science and Technology in CSE, I prefer to introduce myself as a Software Quality Assurance engineer, thriving to reach my  goals alongside my team members using agile strategies."
+  },
+]
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -84,26 +106,26 @@ function Main() {
   useLayoutEffect(()=> {
     if(imgLoad){
         const courseTop = document.querySelector(".course__top");
-        console.log("layout",courseTop.clientHeight);
+        // console.log("layout",courseTop.clientHeight);
         setOverLayHight(courseTop.clientHeight+174)
 
       }
   },[imgLoad])
   //
   useEffect(() => {
-    console.log("form use effect", ref.current.offsetHeight);
+    // console.log("form use effect", ref.current.offsetHeight);
     
     function resizewidth() {
       setIsTabWindow(window.innerWidth)
-      console.log(window.innerWidth);
+      // console.log(window.innerWidth);
       const overlayDiv = document.querySelector(".div__overlay");
       const courseTop = document.querySelector(".course__top");
       const leftElement = document.querySelector(".course_addmission_main");
       setRight(leftElement.clientWidth)
-      console.log("left div position", leftElement.clientWidth + 10);
+      // console.log("left div position", leftElement.clientWidth + 10);
       setOverLayHight(courseTop.clientHeight+174)
       // overlayDiv.clientHeight = courseTop.clientHeight 
-      console.log("course top", courseTop.clientHeight);
+      // console.log("course top", courseTop.clientHeight);
       // console.log("over lay",overlayDiv.clientHeight);
 
       
@@ -112,6 +134,10 @@ function Main() {
     window.addEventListener('resize', resizewidth)
     return () => window.removeEventListener('resize', resizewidth)
   })
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>
@@ -136,7 +162,10 @@ function Main() {
                 <div className="gutter__div"></div>
 
                 <div className="top-image">
-                  <img src={topImage} onLoad={()=> setImgLoad(true)} ref={imgRef} alt="top pic" className="" loading="lazy" />
+                  {/* <img src={topImage} onLoad={()=> setImgLoad(true)} ref={imgRef} alt="top pic" className="" loading="lazy" /> */}
+                  <iframe id="player" onLoad={()=> setImgLoad(true)} type="text/html" width="716" height="403" autoplay={1}
+  src="https://www.youtube.com/embed/jcQ2B0n5K-Y?enablejsapi=1&v=jcQ2B0n5K-Y&autoplay=1"
+  frameborder="0"></iframe>
                 </div>
               </div>
             {isTabWindow <= 768 && (
@@ -268,16 +297,19 @@ function Main() {
                         }}>আপনি যার কাছ থেকে শিখবেন</h2>
 
                         <section className="career__track instructor__div">
+                          {instructor.map((ins)=> {
+                            return(
+                              <>
                           <div className="instructor__wrapper">
 
                             <div className="course__instructor">
                               <div className="instruuctor__header">
                                 <div className="instruuctor__image">
-                                  <Avatar src={oneImg} sx={{ width: 90, height: 90 }} className="avatar__profile" />
+                                  <Avatar src={ins.imgsrc} sx={{ width: 90, height: 90 }} className="avatar__profile" />
                                 </div>
                                 <div className="instruuctor__name">
-                                  <h2>John Doe</h2>
-                                  <p>Instructor at XYZ</p>
+                                  <h2>{ins.name}</h2>
+                                  <p>{ins.title}</p>
                                 </div>
 
 
@@ -287,16 +319,15 @@ function Main() {
                             </div>
                             <div className="insturctor__details">
                               <p>
-                                Software Developer at Markopolo.ai, having more than
-                                three years of experience in full stack web
-                                development. He is the author of some of the top
-                                rated programming & web development courses on
-                                Bohubrihi. Simanta is a Computer Science graduate of
-                                Chittagong University of Engineering & Technology
-                                (CUET)
+                                {ins.content}
                               </p>
                             </div>
                           </div>
+                          <div className="gutter__div"></div>
+                              
+                              </>
+                            )
+                          })}
                         </section>
 
                       </div>
@@ -375,16 +406,19 @@ function Main() {
                           fontSize: "24px", fontFamily: 'Hind Siliguri', fontWeight: "700", lineHeight: "39px"
                         }}>আপনি যার কাছ থেকে শিখবেন</h2>
                           <section className="career__track instructor__div">
+                            {instructor.map((ins)=> {
+                              return(
+                                <>
                       <div className="instructor__wrapper">
 
                         <div className="course__instructor">
                           <div className="instruuctor__header">
                             <div className="instruuctor__image">
-                              <Avatar src={oneImg} sx={{ width: 90, height: 90 }} />
+                              <Avatar src={ins.imgsrc} sx={{ width: 90, height: 90 }} />
                             </div>
                             <div className="instruuctor__name">
-                              <h2>John Doe</h2>
-                              <p>Instructor at XYZ</p>
+                              <h2>{ins.name}</h2>
+                              <p>{ins.title}</p>
                             </div>
 
 
@@ -394,16 +428,15 @@ function Main() {
                         </div>
                         <div className="insturctor__details">
                           <p>
-                            Software Developer at Markopolo.ai, having more than
-                            three years of experience in full stack web
-                            development. He is the author of some of the top
-                            rated programming & web development courses on
-                            Bohubrihi. Simanta is a Computer Science graduate of
-                            Chittagong University of Engineering & Technology
-                            (CUET)
+                            ${ins.content}
                           </p>
                         </div>
                       </div>
+                      <div className="gutter__div"></div>
+                                
+                                </>
+                              )
+                            })}
                     </section>
                         </div>
                       </div>

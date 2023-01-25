@@ -1,11 +1,38 @@
 import React from "react";
-import projectImg from "../../images/Book-List-Project.png";
+import projectImg from "../../images/Project Icon.png";
 import cartImg from "../../images/Shopping-Cart.png";
 
 import ModalImage from "react-modal-image";
 
 
-
+const contents = [
+    {
+        title: "Test Case Writing",
+        imgsrc: ""
+    },
+    {
+        title: "UI Testing",
+        imgsrc: ""
+    },
+    {
+        title: "API Testing",
+        imgsrc: ""
+    },
+    {
+        title: "Database Testing",
+        imgsrc: ""
+    },
+    {
+        title: "Load Testing",
+        imgsrc: ""
+    },
+    {
+        title: "Automation(Selenium)",
+        imgsrc: ""
+    },
+    
+    
+]
 
 const ProjectAssignments = () => {
     return (
@@ -37,7 +64,10 @@ const ProjectAssignments = () => {
 
                 <div className="gutter__div"></div>
             <div className="project__assignment_lists">
-                <div className="card__s">
+                {contents.map(c=> {
+                    return(<>
+                    
+                    <div className="card__s">
                     <div className="card__top">
                         <div>
                             <span>Project</span>
@@ -56,71 +86,11 @@ const ProjectAssignments = () => {
                         {/* <img src={projectImg} alt="bookimg" /> */}
                     </div>
 
-                    <div className="card__bottom">Book List project</div>
+                    <div className="card__bottom" style={{wordWrap: "break-word"}}>{c.title}</div>
                 </div>
-                <div className="card__s">
-                    <div className="card__top">
-                        <div>
-                            <span>Project</span>
-                        </div>
-                        <div>
-                            <span>Assignment</span>
-                        </div>
-                    </div>
-                    <div className="card__middle">
-                        <ModalImage
-                            small={cartImg}
-                            large={cartImg}
-                            hideDownload={true}
-                            hideZoom={true}
-                        />
-                        {/* <img src={projectImg} alt="bookimg" /> */}
-                    </div>
-
-                    <div className="card__bottom">Book List project</div>
-                </div>
-                <div className="card__s">
-                    <div className="card__top">
-                        <div>
-                            <span>Project</span>
-                        </div>
-                        <div>
-                            <span>Assignment</span>
-                        </div>
-                    </div>
-                    <div className="card__middle">
-                        <ModalImage
-                            small={projectImg}
-                            large={projectImg}
-                            hideDownload={true}
-                            hideZoom={true}
-                        />
-                        {/* <img src={projectImg} alt="bookimg" /> */}
-                    </div>
-
-                    <div className="card__bottom">Book List project</div>
-                </div>
-                <div className="card__s">
-                    <div className="card__top">
-                        <div>
-                            <span>Project</span>
-                        </div>
-                        <div>
-                            <span>Assignment</span>
-                        </div>
-                    </div>
-                    <div className="card__middle">
-                        <ModalImage
-                            small={cartImg}
-                            large={cartImg}
-                            hideDownload={true}
-                            hideZoom={true}
-                        />
-                        {/* <img src={projectImg} alt="bookimg" /> */}
-                    </div>
-
-                    <div className="card__bottom">Book List project</div>
-                </div>
+                    </>)
+                })}
+               
             </div>
 
         </div>

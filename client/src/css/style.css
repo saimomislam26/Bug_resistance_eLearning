@@ -246,6 +246,10 @@ span{
     width: 100%;
     object-fit: contain;
     border-radius: 5px;
+    /* .embed-container iframe, .embed-container object, .embed-container embed */
+  
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; clip-path: inset(1px 1px);
+  
   }
   
   .course__top_wrapper .tabs {
@@ -877,7 +881,7 @@ span{
     align-items: center;
     width: 100vw;
     /* max-height: 2rem; */
-    background-color: rgb(82, 61, 61);
+    background-color: #5C2CC5;
     padding: 1rem;
     z-index: 999;
   }
@@ -896,7 +900,7 @@ span{
     font-size: 1.5rem;
   }
   .admission_now {
-    background-color: #c5c13e;
+    background-color: rgb(242, 52, 96);
   }
   .download__syllabus {
     background-color: #55ef8e;
@@ -922,6 +926,7 @@ span{
   
   .btn__amount {
     display: none;
+    color: white;
   }
   
   /**************** */
@@ -2045,10 +2050,11 @@ body::-webkit-scrollbar-thumb:hover {
     transition: box-shadow .3s;
     /* border: 2px solid red; */
     padding: 10px 0 10px 0;
+    box-shadow: 0px 0px 11px 11px rgba(62, 61, 61, 0.1) !important;
 }
-.student_card:hover{
+/* .student_card:hover{
     box-shadow: 0px 0px 11px 11px rgba(62, 61, 61, 0.1);
-}
+} */
 
 /* Specilizing In */
 #specilizing-section {
@@ -3428,7 +3434,15 @@ body::-webkit-scrollbar-thumb:hover {
     content: url('../images/right-icon.png');
     margin-top: 2px;
 }
-.auto_slider{
+.slick-slide>div:nth-child(1){
+    /* margin:0 10px 0  */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.slick-list{
+    margin:0 -10px
+}
+/* .auto_slider{
     display: flex;
     justify-content:space-between !important ;
 }
@@ -3438,7 +3452,7 @@ body::-webkit-scrollbar-thumb:hover {
 .dotsClass{
     visibility: visible;
     width: 400px;
-}
+} */
 /* cart page */
 #cart-products .table-responsive {
     border-radius: 20px;

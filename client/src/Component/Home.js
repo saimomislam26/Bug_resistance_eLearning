@@ -2,27 +2,28 @@ import React, { useContext, useState, useEffect } from 'react'
 
 
 // Importing Images
-import Progress from './Progress'
 import banner from '../images/banner-circle.png'
-import icon1 from '../images/icon-1.png'
-import icon2 from '../images/icon-2.png'
-import icon3 from '../images/icon-3.png'
-import icon4 from '../images/icon-4.png'
 import downloadCV from '../images/download-Icon.png'
 import specializingIcon1 from '../images/specilizing-icon1.png'
 import specializingIcon2 from '../images/specilizing-icon2.png'
 import specializingIcon3 from '../images/specilizing-icon3.png'
 import specializingIcon4 from '../images/specilizing-icon4.png'
 import turn from '../images/now-your-turn-right.png'
-import logo from '../images/logo.png'
+import monkeytest from '../images/Monkey Testing.png'
+import regressiontesting from '../images/regression testing.png'
+import selenium from '../images/selenium.png'
+import smoketesting from '../images/Smoke testing.png'
 
-import ScrollButton from './Shared/ScrollButton'
-import CardSlider from './CardSlider'
 import StudentBig from './StudentBig'
 import Footer from './Shared/Footer'
 import NavbarTop from './Shared/NavbarTop'
 const Home = () => {
 
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <>
       {/* <!-- start preloader --> */}
@@ -41,19 +42,19 @@ const Home = () => {
               <div class="col-lg-10">
                 <div class="main-content">
                   <div class="item one wow fadeInDown">
-                    <img src={icon1} alt="image" />
+                    <img src={regressiontesting} alt="image" />
                     <h5>Regression Testing</h5>
                   </div>
                   <div class="item two wow fadeInDown">
-                    <img src={icon2} alt="image" />
+                    <img src={monkeytest} alt="image" />
                     <h5>Monkey Testing</h5>
                   </div>
                   <div class="item three wow fadeInDown">
-                    <img src={icon3} alt="image" />
+                    <img src={selenium} alt="image" />
                     <h5>Selenium</h5>
                   </div>
                   <div class="item four wow fadeInDown">
-                    <img src={icon4} alt="image" />
+                    <img src={smoketesting} alt="image" />
                     <h5>Smoke Testing</h5>
                   </div>
                   <div class="row justify-content-center">
@@ -62,7 +63,7 @@ const Home = () => {
                         <img src={banner} class="right-img" alt="banner-circle" />
                         <div class="download-area">
                           <span href="#" class="download" style={{ textDecoration: "none" }}>SQA Engineer
-                            <img src={downloadCV} alt="image" />
+                            {/* <img src={downloadCV} alt="image" /> */}
                           </span>
                         </div>
                       </div>
@@ -77,7 +78,7 @@ const Home = () => {
                   {/* <h5>HI THERE, I'M JAMES</h5> */}    
                   <h2>SQA <span>Live</span> Course Platform</h2>
                   <div class="btn-area d-flex align-items-center justify-content-center">
-                    <a href="contact.html" class="cmn-btn" style={{ textDecoration: "none" }}>Enroll Live Course</a>
+                    <a  class="cmn-btn" style={{ textDecoration: "none" }}>Quality Begets Quality</a>
                     {/* <a href="portfolio.html" class="cmn-btn-second" style={{ textDecoration: "none" }}>View Project
                       <span class="btn-icon"></span>
                     </a> */}
@@ -98,7 +99,7 @@ const Home = () => {
               <div class="col-lg-6" >
                 <div class="section-header">
                   <h4 class="sub-title">What We Do</h4>
-                  <h3 class="title">Specilizing In</h3>
+                  <h3 class="title">Specializing In</h3>
                  
                 </div>
               </div>
@@ -143,7 +144,7 @@ const Home = () => {
                   {/* <h4 class="sub-title-alt">Now Your Turn</h4> */}
                   <h3 class="title">Interested in Building a Career in SQA?</h3>
                   <p>Software quality assurance (SQA) is a process that assures that all software engineering processes, methods, activities, and work items are monitored and comply with the defined standards.</p>
-                  <a href="contact.html" class="cmn-btn" style={{ textDecoration: "none" }}>Enroll SQA Live Course</a>
+                  <a class="cmn-btn" style={{ textDecoration: "none" }}>Quality Begets Quality</a>
                 </div>
               </div>
             </div>

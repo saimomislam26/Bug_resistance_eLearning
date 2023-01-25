@@ -1,48 +1,51 @@
 import React from 'react'
 import VideocamIcon from '@mui/icons-material/Videocam';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faCode, faUser, faDiagramProject,faRoad, faBook, faBusinessTime, faTimes, faUserGear, faDisplay, faCertificate, faUserShield, faClock} from "@fortawesome/free-solid-svg-icons"
 import { Link } from 'react-router-dom';
+import { SupportAgent, Timer } from '@mui/icons-material';
 
 
 const contents = [
     {
         icon: <VideocamIcon />,
-        text: "40+ Hours Video"
+        text: "30+ Live Class"
     },
     {
-        icon:  <VideocamIcon />,
-        text: "91 Students"
+        icon:  <FontAwesomeIcon icon={faDiagramProject} />,
+        text: "6 Real SQA Projects"
     },
     {
-        icon:  <VideocamIcon />,
+        icon:  <FontAwesomeIcon icon={faUserShield}  />,
         text: "Mentor Support"
     }, 
     {
-        icon:  <VideocamIcon />,
-        text: "14 Real-Life Projects"
-    }, 
-    {
-        icon:  <VideocamIcon />,
-        text: "Code Review & Feedback"
-    }, 
-    {
-        icon:  <VideocamIcon />,
+        icon:  <FontAwesomeIcon icon={faRoad} />,
         text: "Beginner to Pro"
+    }, 
+    {
+        icon:  <FontAwesomeIcon icon={faDisplay}/>,
+        text: "Automation & Manual"
+    }, 
+    {
+        icon:  <FontAwesomeIcon icon={faBook}/>,
+        text: "Assignments"
     },
      {
-        icon:  <VideocamIcon />,
-        text: "Quizzes & Assignments"
+        icon:  <FontAwesomeIcon icon={faCode} />,
+        text: "Code"
     }, 
     {
-        icon:  <VideocamIcon />,
+        icon:  <FontAwesomeIcon icon={faCertificate} />,
         text: "Professional Certificate"
     }, 
     {
-        icon:  <VideocamIcon />,
-        text: "Duration 4 Months"
+        icon:  <FontAwesomeIcon icon={faClock}/>,
+        text: "Duration 3 months"
     }, 
     {
-        icon:  <VideocamIcon />,
-        text: "2 Years of Content Access"
+        icon:  <FontAwesomeIcon icon={faBusinessTime} />,
+        text: "2 years of Access"
     }
 
 ]
@@ -70,18 +73,22 @@ const CouresMaterial = (props) => {
                     </div>
                     <hr style={{border: "1px solid #5C2CC5"}} />
                     <div>
-                    <span>প্রথম ইন্সটলমেন্ট</span>
-                    <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span>
+                    <span>দুইটি ইন্সটলমেন্টে কোর্স ফি পরিশোধ করা যাবে</span>
+                    {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
+                    </div>
+                    <div style={{marginTop:"10px"}}>
+                    <span>সপ্তম ব্যাচ শুরুঃ ২৭ শে ফেব্রুয়ারী </span>
+                    {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
 
 
                 </div>
                 <div className='sticky__btn row'>
                     <span>
-                    <Link to='' class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "#F23460", color: "#ffffff", border: "2px solid #F23460"}}>এখনই ভর্তি হোন</Link>
+                    <a  href='https://docs.google.com/forms/d/e/1FAIpQLSezM2iqqRIZkDcmKkQWqjwPPtpGwXMx617jdby5319sAE_Phg/viewform' target={"_blank"} class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "#F23460", color: "#ffffff", border: "2px solid #F23460"}}>এখনই ভর্তি হোন</a>
                     </span>
                     <span >
-                    <Link to='' class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "transparent",border: "2px solid #F23460", color: "#ffffff" }} role={"button"}>ডাউনলোড সিলেবাস</Link>
+                    <a href='https://drive.google.com/file/d/1YGrnROqvRlOEbJNXR61ITkPVlf02EerL/view?usp=sharing' download target={"_blank"} class="cmn-btn" style={{ textDecoration: "none", backgroundColor: "transparent",border: "2px solid #F23460", color: "#ffffff" }} role={"button"}>ডাউনলোড সিলেবাস</a>
                     </span>
                 </div>
             </div>
