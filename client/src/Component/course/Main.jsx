@@ -34,24 +34,25 @@ let selectedValues = [
 ];
 const instructor = [
   {
-    name: "Makid Haider",
-    imgsrc: oneImg,
-    title: "Instructor, Bug Resistance",
-    content: "Having graduated from Ahsanullah University of Science and Technology, I joined BJIT ltd as a SQA Engineer. Since then, I have been working in QA professionally. I am currently working at IdeaScale ltd. In 2022,  I've successfully passed one of the most prestigious certificates for any SQA Engineer, the ISTQB® - International Software Testing Qualifications Board exam."
-  },
-  {
     name: "Fahim Chowdhury",
     imgsrc: secondImage,
     title: "Instructor, Bug Resistance",
     content: "Software Engineer at Relisource Tech Ltd, having more than three years of experience in the Software Quality Assurance sector. Previously, I had been working in Tekarsh as a SQA Engineer. Besides regular duties, I love to engage myself in producing something useful; using the creativity I have & the knowledge I have gained."
   },
   {
-    name: "Mohoshi Haque",
-    imgsrc: thirdImage,
-    title: "Mentor, Bug Resistance",
-
-    content: "Graduating from Ahsanullah University of Science and Technology in CSE, I prefer to introduce myself as a Software Quality Assurance engineer, thriving to reach my  goals alongside my team members using agile strategies."
+    name: "Makid Haider",
+    imgsrc: oneImg,
+    title: "Instructor, Bug Resistance",
+    content: "Having graduated from Ahsanullah University of Science and Technology, I joined BJIT ltd as a SQA Engineer. Since then, I have been working in QA professionally. I am currently working at IdeaScale ltd. In 2022,  I've successfully passed one of the most prestigious certificates for any SQA Engineer, the ISTQB® - International Software Testing Qualifications Board exam."
   },
+ 
+  // {
+  //   name: "Mohoshi Haque",
+  //   imgsrc: thirdImage,
+  //   title: "Mentor, Bug Resistance",
+
+  //   content: "Graduating from Ahsanullah University of Science and Technology in CSE, I prefer to introduce myself as a Software Quality Assurance engineer, thriving to reach my  goals alongside my team members using agile strategies."
+  // },
 ]
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

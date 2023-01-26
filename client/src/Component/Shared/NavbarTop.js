@@ -37,7 +37,7 @@ const NavbarTop = () => {
 
               <Navbar className='navbar p-0' light expand="md">
                 <div class="logo-section flex-grow-1 d-flex align-items-center">
-                  <Link class="site-logo site-title" to='/Bug_resistance_eLearning'><img src={logo} alt="site-logo" /></Link>
+                  <Link class="site-logo site-title" to='/'><img src={logo} alt="site-logo" /></Link>
                   <h6 style={{color:"white",marginLeft:"15px"}}>BUG RESISTANCE</h6>
                 </div>
                 <NavbarToggler onClick={toggle} />

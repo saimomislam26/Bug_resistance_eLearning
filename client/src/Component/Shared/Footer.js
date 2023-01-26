@@ -20,7 +20,7 @@ const Footer = () => {
         <div class="bottom-area">
           <div class="row d-flex justify-content-between">
             <div class="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center justify-cen">
-              <Link to='/Bug_resistance_eLearning/'>
+              <Link to='/'>
                 <img src={logo} alt="logo" />
               </Link>
             </div>
