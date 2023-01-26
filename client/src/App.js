@@ -23,9 +23,9 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/Bug_resistance_eLearning/" exact element={<Home/>}/>
+        <Route path="/" exact element={<Home/>}/>
         <Route path="/student" exact element={<CardSlider/>}/>
-        <Route path='/Bug_resistance_eLearning/courseadmission' exact element={<Main/>}/>
+        <Route path='/courseadmission' exact element={<Main/>}/>
       </Routes>
     </div>
   )
