@@ -35,13 +35,13 @@ let selectedValues = [
 const instructor = [
   {
     name: "Fahim Chowdhury",
-    imgsrc: secondImage,
+    imgsrc: oneImg,
     title: "Instructor, Bug Resistance",
     content: "Software Engineer at Relisource Tech Ltd, having more than three years of experience in the Software Quality Assurance sector. Previously, I had been working in Tekarsh as a SQA Engineer. Besides regular duties, I love to engage myself in producing something useful; using the creativity I have & the knowledge I have gained."
   },
   {
     name: "Makid Haider",
-    imgsrc: oneImg,
+    imgsrc: secondImage,
     title: "Instructor, Bug Resistance",
     content: "Having graduated from Ahsanullah University of Science and Technology, I joined BJIT ltd as a SQA Engineer. Since then, I have been working in QA professionally. I am currently working at IdeaScale ltd. In 2022,  I've successfully passed one of the most prestigious certificates for any SQA Engineer, the ISTQB® - International Software Testing Qualifications Board exam."
   },
