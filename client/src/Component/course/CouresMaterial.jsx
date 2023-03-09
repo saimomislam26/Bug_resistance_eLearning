@@ -77,7 +77,7 @@ const CouresMaterial = (props) => {
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
                     <div style={{marginTop:"10px"}}>
-                    <span>সপ্তম ব্যাচ শুরুঃ ২৬শে ফেব্রুয়ারী,২০২৩ </span>
+                    <span>অষ্টম ব্যাচ শুরুঃ ০৮ ই মে,২০২৩</span>
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
 
