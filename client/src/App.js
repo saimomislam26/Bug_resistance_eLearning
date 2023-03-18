@@ -18,6 +18,7 @@ import Home from './Component/Home'
 import StudentSay from './Component/StudentSay'
 import CardSlider from './Component/CardSlider'
 import Main from './Component/course/Main'
+import Blog from './Component/Blog'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/" exact element={<Home/>}/>
         <Route path="/student" exact element={<CardSlider/>}/>
         <Route path='/courseadmission' exact element={<Main/>}/>
+        {/* <Route path='/blog' exact element={<Blog/>}/> */}
       </Routes>
     </div>
   )
