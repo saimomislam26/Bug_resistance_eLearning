@@ -76,7 +76,7 @@ const CouresMaterial = (props) => {
                     <span>দুইটি ইন্সটলমেন্টে কোর্স ফি পরিশোধ করা যাবে</span>
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
-                    <div style={{marginTop:"10px"}}>
+                    <div style={{marginTop:"10px",marginBottom:"10px"}}>
                     <span>নবম ব্যাচ শুরুঃ ১৩ই জুন,২০২৩</span>
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
