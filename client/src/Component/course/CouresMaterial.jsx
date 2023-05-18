@@ -77,7 +77,7 @@ const CouresMaterial = (props) => {
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
                     <div style={{marginTop:"10px",marginBottom:"10px"}}>
-                    <span>নবম ব্যাচ শুরুঃ ১৩ই জুন,২০২৩</span>
+                    <span>9th Batch will Start from: 13th June,2023</span>
                     {/* <span className='course__amount_installment' style={{fontWeight: "700 !important"}}>৳ ৪,০০০</span> */}
                     </div>
 
