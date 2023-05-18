@@ -48,7 +48,7 @@ const NavbarTop = () => {
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/">About</Link></li> */}
                       <li className='visible-list' ><Link to="/courseadmission">Course Admission</Link></li>
                       {/* <li className='visible-list' ><Link to="/Bug_resistance_eLearning/" >Career-Blog</Link></li> */}
-                      {/* <li className='visible-list' ><Link to="/blog">Blog</Link></li> */}
+                      <li className='visible-list' ><Link to="/service">Services</Link></li>
                       <li className='visible-list' ><a href='https://www.facebook.com/bugresistance' target={'blank'} >Contact</a></li>
 
                     </ul>
